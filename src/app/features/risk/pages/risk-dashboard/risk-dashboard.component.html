@@ -1,0 +1,71 @@
+<div class="risk-page">
+
+  <h1>
+    Risk Dashboard
+  </h1>
+
+  <div class="risk-layout">
+
+    <div class="panel exposure">
+
+      <h3>
+        Portfolio Exposure
+      </h3>
+
+      <div class="exposure-value">
+
+        $ {{ exposure | number:'1.2-2' }}
+
+      </div>
+
+    </div>
+
+    <div class="panel leverage">
+
+      <h3>
+        Leverage
+      </h3>
+
+      <div
+        class="leverage-value"
+        [class.high]="leverage > 2">
+
+        {{ leverage | number:'1.2-2' }} x
+
+      </div>
+
+    </div>
+
+    <div class="panel drawdown">
+
+      <h3>
+        Max Drawdown
+      </h3>
+
+      <div
+        class="drawdown-value"
+        [class.warning]="drawdown > 10">
+
+        {{ drawdown | number:'1.2-2' }} %
+
+      </div>
+
+    </div>
+
+    <div class="panel var">
+
+      <h3>
+        Value at Risk (95%)
+      </h3>
+
+      <div class="var-value">
+
+        $ {{ valueAtRisk | number:'1.2-2' }}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

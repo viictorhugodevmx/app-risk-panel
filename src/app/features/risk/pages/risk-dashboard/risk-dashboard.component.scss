@@ -1,0 +1,85 @@
+.risk-page {
+
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+}
+
+.risk-layout {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.panel {
+
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  min-height: 140px;
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+
+  font-weight: 600;
+
+}
+
+.exposure-value {
+
+  font-size: 28px;
+  font-weight: 700;
+
+  margin-top: 10px;
+
+  color: #2563eb;
+
+}
+
+.leverage-value {
+
+  font-size: 26px;
+  font-weight: 700;
+
+  margin-top: 10px;
+
+  color: #2563eb;
+
+}
+
+.leverage-value.high {
+
+  color: #ef4444;
+
+}
+
+.drawdown-value {
+
+  font-size: 26px;
+  font-weight: 700;
+
+  margin-top: 10px;
+
+  color: #f59e0b;
+
+}
+
+.drawdown-value.warning {
+
+  color: #ef4444;
+
+}
+
+.var-value {
+
+  font-size: 26px;
+  font-weight: 700;
+
+  margin-top: 10px;
+
+  color: #ef4444;
+
+}
